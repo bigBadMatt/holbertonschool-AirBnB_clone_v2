@@ -22,4 +22,4 @@ if __name__ == '__main__':
 
 @app.route('/c/<text>')
 def c_is_fun(text):
-    return text.replace('_', ' ')
+    return 'C' + text.replace('_', ' ')
