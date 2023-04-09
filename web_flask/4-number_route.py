@@ -28,7 +28,7 @@ def python_is_cool(text):
     return 'Python ' + text.replace('_', ' ')
 
 
-@app.route('/number/<n>')
+@app.route('/number/<int:n>')
 def if_n_is_number(n):
     if isinstance(n, int):
         return str(n) + ' is a number'
